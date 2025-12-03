@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %} About Me {% endblock title %}
+
+{% block content %}
+
+<div class="container py-4">
+
+    <div class="row align-items-center glass-card">
+        <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <img 
+                src="/static/img/noface.jpg" 
+                class="rounded-circle img-fluid shadow" 
+                alt="Profile Picture"
+                style="max-width: 250px;"
+            >
+        </div>
+
+        <div class="col-md-8">
+            <h1 class="fw-bold mb-3 glow-title">About Me</h1>
+            <p class="lead">
+                I am a security-focused technology professional with experience in cybersecurity engineering,
+                threat intelligence, cloud defense, and AI-driven automation. I enjoy leveraging modern tools
+                and machine learning techniques to build smarter, more adaptive security systems.
+            </p>
+            <p>
+                Over the past several years, I’ve supported secure infrastructure initiatives, built 
+                automated detection workflows, and collaborated across engineering, SOC, and compliance teams.
+                I’m currently expanding my capabilities in AI/ML with the goal of becoming a leading Cyber AI Engineer.
+            </p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="glass-card mt-5 p-4">
+        <h3 class="fw-bold mb-3 glow-title">Core Skills</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>Cybersecurity Engineering</li>
+                    <li>Threat Intelligence</li>
+                    <li>Incident Response</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Python Automation</li>
+                    <li>AI/ML for Security</li>
+                    <li>Cloud Security (AWS/Azure)</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>EDR & SIEM Platforms</li>
+                    <li>NIST / ISO Frameworks</li>
+                    <li>Scripting & Tooling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
